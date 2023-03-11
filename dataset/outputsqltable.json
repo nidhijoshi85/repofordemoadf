@@ -1,0 +1,17 @@
+{
+	"name": "outputsqltable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Sinksqldb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dob",
+			"table": "test_data"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

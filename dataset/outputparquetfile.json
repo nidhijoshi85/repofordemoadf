@@ -1,0 +1,20 @@
+{
+	"name": "outputparquetfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Sinkblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "population"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
