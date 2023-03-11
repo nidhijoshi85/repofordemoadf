@@ -1,0 +1,9 @@
+{
+	"name": "KRAFDemo",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e1765a69-e30f-4a1e-a21d-357e3e359ee3",
+		"tenantId": "15fae981-21a5-496d-8eaf-c0f91b48cff9"
+	}
+}

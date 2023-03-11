@@ -1,0 +1,26 @@
+{
+	"name": "OnPremSourceTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "krafsqlonprem",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "nchar"
+			},
+			{
+				"name": "value",
+				"type": "nchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "person",
+			"table": "address"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

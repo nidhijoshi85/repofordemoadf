@@ -1,0 +1,58 @@
+{
+	"name": "AzureTargetTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "addressID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "addressline1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "addressline2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "City",
+				"type": "nvarchar"
+			},
+			{
+				"name": "stateprovinceid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "postalcode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "spatiallocation",
+				"type": "geography"
+			},
+			{
+				"name": "rowguid",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "modifieddate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Address"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
